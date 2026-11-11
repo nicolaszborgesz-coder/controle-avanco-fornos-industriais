@@ -125,6 +125,7 @@ controle-avanco-fornos-industriais/
 │
 ├── painel-de-controle-1.jpeg
 ├── painel-de-controle-2.jpeg
+├──planilha.jpeg
 ├── requirements.txt
 ├── .gitignore
 ├── EXECUTAR.bat
