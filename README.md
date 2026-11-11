@@ -66,9 +66,9 @@ A planilha contém três abas:
 - **Etapas:** pesos, percentuais planejados, realizados e desvios.
 - **Curva S:** evolução acumulada planejada e realizada.
 
-![Gráfico de avanço físico](planilha.png)
+![planilha](planilha.png)
 
-[Visualizar o gráfico em PNG](planilha.png)
+[Visualizar a planilha em PNG](planilha.png)
 
 ### 2. Gráfico de avanço físico
 
