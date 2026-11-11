@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Sistema demonstrativo de Planejamento e Controle de Obras Industriais.">
+
+    <title>Controle de Avanço Físico | PCO</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">CF</div>
+
+            <div>
+                <strong>CONTROLE FÍSICO</strong>
+                <small>GESTÃO INDUSTRIAL</small>
+            </div>
+        </div>
+
+        <p class="menu-title">MENU PRINCIPAL</p>
+
+        <a href="#inicio" class="menu-item active">
+            ▦ <span>Visão geral</span>
+        </a>
+
+        <a href="#etapas" class="menu-item">
+            ▤ <span>Etapas da obra</span>
+        </a>
+
+        <a href="#curva" class="menu-item">
+            ⌁ <span>Curva S</span>
+        </a>
+
+        <div class="sidebar-footer">
+            <span class="online"></span>
+            AMBIENTE DEMONSTRATIVO
+        </div>
+
+    </aside>
+
+
+    <main class="main" id="inicio">
+
+        <header class="topbar">
+
+            <div>
+                <p class="eyebrow">PLANEJAMENTO E CONTROLE DE OBRAS</p>
+
+                <h1>Reforma de Fornos Industriais</h1>
+
+                <p class="subtitle">
+                    Painel de acompanhamento do avanço físico
+                </p>
+            </div>
+
+            <div class="actions">
+
+                <span class="badge">
+                    DADOS DEMONSTRATIVOS
+                </span>
+
+                <button id="refreshBtn">
+                    ↻ Atualizar
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <section class="cards">
+
+            <article class="card">
+                <small>AVANÇO REALIZADO</small>
+                <strong id="realizado">--%</strong>
+                <span>Execução ponderada</span>
+            </article>
+
+            <article class="card">
+                <small>AVANÇO PLANEJADO</small>
+                <strong id="planejado">--%</strong>
+                <span>Referência do cronograma</span>
+            </article>
+
+            <article class="card">
+                <small>DESVIO FÍSICO</small>
+                <strong id="desvio">-- p.p.</strong>
+                <span>Realizado - planejado</span>
+            </article>
+
+            <article class="card">
+                <small>ETAPAS MONITORADAS</small>
+                <strong id="totalEtapas">--</strong>
+                <span id="concluidas">-- concluídas</span>
+            </article>
+
+        </section>
+
+
+        <section class="panel" id="etapas">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">ACOMPANHAMENTO</p>
+                    <h2>Avanço físico por etapa</h2>
+                </div>
+
+                <span class="legend">
+                    <i class="dot blue"></i> Planejado
+                    <i class="dot green"></i> Realizado
+                </span>
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ETAPA</th>
+                            <th>PESO</th>
+                            <th>PLANEJADO</th>
+                            <th>REALIZADO</th>
+                            <th>DESVIO</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="stageRows">
+                        <tr>
+                            <td colspan="5">Carregando dados...</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <section class="panel" id="curva">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">EVOLUÇÃO DO PROJETO</p>
+                    <h2>Curva S — Planejado x Realizado</h2>
+                </div>
+
+            </div>
+
+            <div class="chart-container">
+                <canvas id="grafico-curva"></canvas>
+            </div>
+
+            <p class="note">
+                Histórico demonstrativo de evolução física.
+            </p>
+
+        </section>
+
+
+        <section class="panel">
+
+            <p class="eyebrow">AUTOMAÇÃO DO PROCESSO</p>
+
+            <h2>Fluxo de funcionamento</h2>
+
+            <div class="workflow">
+
+                <div>
+                    <span>01</span>
+                    <strong>Dados</strong>
+                    <small>Atualização do CSV</small>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <strong>Python</strong>
+                    <small>Processamento</small>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <strong>Excel</strong>
+                    <small>Relatórios e gráficos</small>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <strong>Dashboard</strong>
+                    <small>Visualização gerencial</small>
+                </div>
+
+            </div>
+
+            <p class="note">
+                Projeto demonstrativo. Os dados não representam
+                informações operacionais de empresas ou contratos específicos.
+            </p>
+
+        </section>
+
+
+        <footer>
+
+            <strong>Nicolas Cardoso Borges</strong>
+
+            <p>
+                ADS | Planejamento e Controle de Obras |
+                Python | BI | Desenvolvimento Web
+            </p>
+
+            <small id="updatedAt">
+                Aguardando atualização
+            </small>
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

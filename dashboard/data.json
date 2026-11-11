@@ -1,0 +1,101 @@
+{
+    "atualizado_em": "11/11/2026 00:17",
+    "resumo": {
+        "planejado": 50.25,
+        "realizado": 39.8,
+        "desvio": -10.45,
+        "total_etapas": 7,
+        "totalEtapas": 7,
+        "concluidas": 0
+    },
+    "etapas": [
+        {
+            "etapa": "Revestimento Refratário",
+            "peso": 30.0,
+            "planejado": 75.0,
+            "realizado": 65.0,
+            "desvio": -10.0,
+            "contribuicao": 19.5
+        },
+        {
+            "etapa": "Montagem Mecânica",
+            "peso": 20.0,
+            "planejado": 60.0,
+            "realizado": 48.0,
+            "desvio": -12.0,
+            "contribuicao": 9.6
+        },
+        {
+            "etapa": "Limpeza e Pintura",
+            "peso": 10.0,
+            "planejado": 65.0,
+            "realizado": 52.0,
+            "desvio": -13.0,
+            "contribuicao": 5.2
+        },
+        {
+            "etapa": "Montagem Elétrica",
+            "peso": 15.0,
+            "planejado": 45.0,
+            "realizado": 30.0,
+            "desvio": -15.0,
+            "contribuicao": 4.5
+        },
+        {
+            "etapa": "Teste de Funcionamento",
+            "peso": 10.0,
+            "planejado": 20.0,
+            "realizado": 10.0,
+            "desvio": -10.0,
+            "contribuicao": 1.0
+        },
+        {
+            "etapa": "Sinterização",
+            "peso": 10.0,
+            "planejado": 5.0,
+            "realizado": 0.0,
+            "desvio": -5.0,
+            "contribuicao": 0.0
+        },
+        {
+            "etapa": "Start-up",
+            "peso": 5.0,
+            "planejado": 0.0,
+            "realizado": 0.0,
+            "desvio": 0.0,
+            "contribuicao": 0.0
+        }
+    ],
+    "curva": {
+        "semanas": [
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08"
+        ],
+        "planejado": [
+            5,
+            12,
+            20,
+            28,
+            38,
+            45,
+            48,
+            50.25
+        ],
+        "realizado": [
+            3,
+            8,
+            14,
+            20,
+            28,
+            34,
+            38,
+            39.8
+        ]
+    }
+}
